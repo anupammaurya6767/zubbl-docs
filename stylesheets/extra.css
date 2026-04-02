@@ -1,0 +1,18 @@
+/* Zubbl brand overrides */
+:root {
+  --md-primary-fg-color: #f97316;
+  --md-accent-fg-color: #fb923c;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #f97316;
+  --md-accent-fg-color: #fb923c;
+}
+
+.md-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.md-tabs {
+  background: #111;
+}
