@@ -1281,7 +1281,7 @@
 <hr />
 <h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
 <h3 id="1-get-your-api-key">1. Get Your API Key<a class="headerlink" href="#1-get-your-api-key" title="Permanent link">&para;</a></h3>
-<p>Sign up at <a href="https://zubbl.ai">zubbl.ai</a> to get your API key.</p>
+<p>Sign up at <a href="https://zubbl.in">zubbl.in</a> to get your API key.</p>
 <p>Format: <code>zubbl_&lt;tenant_id&gt;_&lt;secret&gt;</code></p>
 <h3 id="2-basic-integration-3-lines">2. Basic Integration (3 Lines!)<a class="headerlink" href="#2-basic-integration-3-lines" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">zubbl</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZubblClient</span>
@@ -1293,12 +1293,12 @@
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">smart_agent</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">wrap</span><span class="p">(</span><span class="n">your_agent</span><span class="p">)</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
 <a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1"># Use it exactly like before — now it learns!</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">result</span> <span class="o">=</span> <span class="n">smart_agent</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;Complete this task&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">result</span> <span class="o">=</span> <span class="n">smart_agent</span><span class="p">(</span><span class="s2">&quot;Complete this task&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>That's it! Your agent now uses Zubbl's <strong>dual learning loop</strong>:
 - <strong>Trajectory learning:</strong> Records executions, extracts patterns, serves cross-task policies
-- <strong>Reflexion:</strong> On failure, generates self-reflection and retries immediately
-- Gets measurably smarter over time (82% -&gt; 88% on eval benchmarks)</p>
+- <strong>Failure recovery:</strong> On failure, retries with prompt patching, model fallback, and cached responses
+- Gets measurably smarter over time through continuous learning</p>
 <hr />
 <h2 id="framework-integration-examples">Framework Integration Examples<a class="headerlink" href="#framework-integration-examples" title="Permanent link">&para;</a></h2>
 <h3 id="langgraph">LangGraph<a class="headerlink" href="#langgraph" title="Permanent link">&para;</a></h3>
@@ -1411,7 +1411,7 @@
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;zubbl_xxx_xxx&quot;</span><span class="p">,</span>
 <a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
 <a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="c1"># API endpoint (default: production)</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://api.zubbl.ai&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://api.zubbl.in&quot;</span><span class="p">,</span>
 <a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
 <a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    <span class="c1"># RL computation mode</span>
 <a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="n">rl_mode</span><span class="o">=</span><span class="n">RLMode</span><span class="o">.</span><span class="n">LOCAL</span><span class="p">,</span>      <span class="c1"># Free — runs locally</span>

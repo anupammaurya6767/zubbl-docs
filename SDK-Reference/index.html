@@ -1746,7 +1746,7 @@
 
 <h1 id="zubbl-sdk-documentation">Zubbl SDK Documentation<a class="headerlink" href="#zubbl-sdk-documentation" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>Version:</strong> 0.1.0 | <strong>Python:</strong> 3.9+ | <strong>License:</strong> MIT</p>
+<p><strong>Version:</strong> 0.2.0 | <strong>Python:</strong> 3.9+ | <strong>License:</strong> MIT</p>
 </blockquote>
 <p>Make any AI agent smarter automatically. Drop-in SDK that adds trajectory learning + failure recovery to any agent framework.</p>
 <hr />
@@ -1763,7 +1763,7 @@
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">smart_agent</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">wrap</span><span class="p">(</span><span class="n">your_agent</span><span class="p">)</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># Use exactly like before — now it learns and self-recovers</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">result</span> <span class="o">=</span> <span class="n">smart_agent</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;Complete this task&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">result</span> <span class="o">=</span> <span class="n">smart_agent</span><span class="p">(</span><span class="s2">&quot;Complete this task&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>That's it. Your agent now:
 - Records every execution as a trajectory
@@ -1778,7 +1778,7 @@
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">client</span> <span class="o">=</span> <span class="n">ZubblClient</span><span class="p">(</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;zubbl_yourtenantid_yoursecret&quot;</span><span class="p">,</span>   <span class="c1"># Required</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://api.zubbl.ai&quot;</span><span class="p">,</span>           <span class="c1"># Default</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://api.zubbl.in&quot;</span><span class="p">,</span>           <span class="c1"># Default</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">rl_mode</span><span class="o">=</span><span class="n">RLMode</span><span class="o">.</span><span class="n">LOCAL</span><span class="p">,</span>                       <span class="c1"># Free tier</span>
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">auto_ingest</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                           <span class="c1"># Auto-send trajectories</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">auto_query</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                            <span class="c1"># Auto-fetch policies</span>
@@ -1809,7 +1809,7 @@
 <tr>
 <td><code>base_url</code></td>
 <td><code>str</code></td>
-<td><code>"https://api.zubbl.ai"</code></td>
+<td><code>"https://api.zubbl.in"</code></td>
 <td>API endpoint URL</td>
 </tr>
 <tr>
@@ -2635,7 +2635,7 @@
 <h3 id="api-key-format">API Key Format<a class="headerlink" href="#api-key-format" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>zubbl_&lt;tenant_id&gt;_&lt;secret&gt;
 </code></pre></div>
-<p>Get your API key at <a href="https://zubbl.ai">zubbl.ai</a>.</p>
+<p>Get your API key at <a href="https://zubbl.in">zubbl.in</a>.</p>
 <hr />
 <h2 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h2>
 <table>
@@ -2650,22 +2650,22 @@
 <tr>
 <td>Free</td>
 <td>$0/mo</td>
-<td>10,000 cloud credits/month</td>
+<td>10,000 credits/month</td>
 </tr>
 <tr>
 <td>Local PRO</td>
-<td>$19/mo</td>
-<td>Unlimited local learning + 25K cloud credits</td>
+<td>$29/mo</td>
+<td>100,000 credits/month</td>
 </tr>
 <tr>
 <td>Cloud PRO</td>
-<td>$49/mo</td>
-<td>100,000 cloud credits (GPU powered)</td>
+<td>$99/mo</td>
+<td>500,000 credits (GPU powered)</td>
 </tr>
 <tr>
 <td>Team</td>
-<td>$199/mo</td>
-<td>Unlimited + 5 seats + priority support</td>
+<td>$299/mo</td>
+<td>2,000,000 credits + priority support</td>
 </tr>
 </tbody>
 </table>
@@ -2759,9 +2759,9 @@
 <hr />
 <h2 id="support">Support<a class="headerlink" href="#support" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Docs:</strong> <a href="https://docs.zubbl.ai">docs.zubbl.ai</a></li>
+<li><strong>Docs:</strong> <a href="https://docs.zubbl.in">docs.zubbl.in</a></li>
 <li><strong>GitHub Issues:</strong> <a href="https://github.com/zubbl/zubbl/issues">github.com/zubbl/zubbl/issues</a></li>
-<li><strong>Email:</strong> hello@zubbl.ai</li>
+<li><strong>Email:</strong> hello@zubbl.in</li>
 </ul>
 
 

@@ -711,10 +711,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ingesting-trajectories" class="md-nav__link">
+  <a href="#automatic-recording-via-wrap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ingesting Trajectories
+        Automatic Recording (via wrap)
       
     </span>
   </a>
@@ -722,10 +722,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ingestrequest-fields" class="md-nav__link">
+  <a href="#manual-recording" class="md-nav__link">
     <span class="md-ellipsis">
       
-        IngestRequest Fields
+        Manual Recording
       
     </span>
   </a>
@@ -733,10 +733,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-schema" class="md-nav__link">
+  <a href="#step-by-step-recording" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step Schema
+        Step-by-Step Recording
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Fields
       
     </span>
   </a>
@@ -1153,10 +1164,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ingesting-trajectories" class="md-nav__link">
+  <a href="#automatic-recording-via-wrap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ingesting Trajectories
+        Automatic Recording (via wrap)
       
     </span>
   </a>
@@ -1164,10 +1175,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ingestrequest-fields" class="md-nav__link">
+  <a href="#manual-recording" class="md-nav__link">
     <span class="md-ellipsis">
       
-        IngestRequest Fields
+        Manual Recording
       
     </span>
   </a>
@@ -1175,10 +1186,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-schema" class="md-nav__link">
+  <a href="#step-by-step-recording" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step Schema
+        Step-by-Step Recording
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Fields
       
     </span>
   </a>
@@ -1207,68 +1229,33 @@
 
 <h1 id="trajectory-recording">Trajectory Recording<a class="headerlink" href="#trajectory-recording" title="Permanent link">&para;</a></h1>
 <p>Record agent execution trajectories for learning.</p>
-<h2 id="ingesting-trajectories">Ingesting Trajectories<a class="headerlink" href="#ingesting-trajectories" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">zubbl</span><span class="o">.</span><span class="n">ingest</span><span class="p">(</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">trajectory_id</span><span class="o">=</span><span class="s2">&quot;traj-001&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">task_description</span><span class="o">=</span><span class="s2">&quot;Analyze codebase for security issues&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">steps</span><span class="o">=</span><span class="p">[</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="p">{</span><span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;read_file&quot;</span><span class="p">,</span> <span class="s2">&quot;tool_name&quot;</span><span class="p">:</span> <span class="s2">&quot;file_reader&quot;</span><span class="p">,</span> <span class="s2">&quot;tool_output&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">},</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="p">{</span><span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;analyze&quot;</span><span class="p">,</span> <span class="s2">&quot;tool_name&quot;</span><span class="p">:</span> <span class="s2">&quot;ast_parser&quot;</span><span class="p">,</span> <span class="s2">&quot;tool_output&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">},</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">],</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">status</span><span class="o">=</span><span class="s2">&quot;success&quot;</span><span class="p">,</span>  <span class="c1"># &quot;success&quot; | &quot;failure&quot; | &quot;partial&quot;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;tokens&quot;</span><span class="p">:</span> <span class="mi">1240</span><span class="p">,</span> <span class="s2">&quot;duration_ms&quot;</span><span class="p">:</span> <span class="mi">3200</span><span class="p">},</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">)</span>
+<h2 id="automatic-recording-via-wrap">Automatic Recording (via wrap)<a class="headerlink" href="#automatic-recording-via-wrap" title="Permanent link">&para;</a></h2>
+<p>The simplest approach — <code>wrap()</code> handles recording automatically:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">smart_agent</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">wrap</span><span class="p">(</span><span class="n">my_agent</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">result</span> <span class="o">=</span> <span class="n">smart_agent</span><span class="p">(</span><span class="s2">&quot;Analyze codebase for security issues&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="ingestrequest-fields">IngestRequest Fields<a class="headerlink" href="#ingestrequest-fields" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>trajectory_id</code></td>
-<td>string</td>
-<td>Yes</td>
-<td>Unique ID for the trajectory</td>
-</tr>
-<tr>
-<td><code>tenant_id</code></td>
-<td>string</td>
-<td>Auto</td>
-<td>Extracted from API key</td>
-</tr>
-<tr>
-<td><code>task_description</code></td>
-<td>string</td>
-<td>Yes</td>
-<td>What the agent was doing</td>
-</tr>
-<tr>
-<td><code>steps</code></td>
-<td>list[Step]</td>
-<td>Yes</td>
-<td>Ordered list of actions taken</td>
-</tr>
-<tr>
-<td><code>status</code></td>
-<td>string</td>
-<td>Yes</td>
-<td>Outcome: success, failure, partial</td>
-</tr>
-<tr>
-<td><code>metadata</code></td>
-<td>dict</td>
-<td>No</td>
-<td>Extra data (tokens, duration, etc.)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="step-schema">Step Schema<a class="headerlink" href="#step-schema" title="Permanent link">&para;</a></h2>
+<h2 id="manual-recording">Manual Recording<a class="headerlink" href="#manual-recording" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">zubbl.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">Trajectory</span><span class="p">,</span> <span class="n">Step</span><span class="p">,</span> <span class="n">TaskStatus</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">trajectory</span> <span class="o">=</span> <span class="n">Trajectory</span><span class="p">(</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">trajectory_id</span><span class="o">=</span><span class="s2">&quot;traj-001&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">task_description</span><span class="o">=</span><span class="s2">&quot;Analyze codebase for security issues&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        <span class="n">Step</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s2">&quot;read_file&quot;</span><span class="p">,</span> <span class="n">tool_name</span><span class="o">=</span><span class="s2">&quot;file_reader&quot;</span><span class="p">,</span> <span class="n">tool_output</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">),</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="n">Step</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s2">&quot;analyze&quot;</span><span class="p">,</span> <span class="n">tool_name</span><span class="o">=</span><span class="s2">&quot;ast_parser&quot;</span><span class="p">,</span> <span class="n">tool_output</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">),</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="p">],</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="n">status</span><span class="o">=</span><span class="n">TaskStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">,</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;tokens&quot;</span><span class="p">:</span> <span class="mi">1240</span><span class="p">,</span> <span class="s2">&quot;duration_ms&quot;</span><span class="p">:</span> <span class="mi">3200</span><span class="p">},</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">)</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">zubbl</span><span class="o">.</span><span class="n">ingest</span><span class="p">(</span><span class="n">trajectory</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="step-by-step-recording">Step-by-Step Recording<a class="headerlink" href="#step-by-step-recording" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">tid</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">start_trajectory</span><span class="p">(</span><span class="s2">&quot;Analyze codebase for security issues&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">zubbl</span><span class="o">.</span><span class="n">record_step</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s2">&quot;read_file&quot;</span><span class="p">,</span> <span class="n">tool_name</span><span class="o">=</span><span class="s2">&quot;file_reader&quot;</span><span class="p">,</span> <span class="n">tool_output</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">zubbl</span><span class="o">.</span><span class="n">record_step</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s2">&quot;analyze&quot;</span><span class="p">,</span> <span class="n">tool_name</span><span class="o">=</span><span class="s2">&quot;ast_parser&quot;</span><span class="p">,</span> <span class="n">tool_output</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">traj</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">end_trajectory</span><span class="p">(</span><span class="n">status</span><span class="o">=</span><span class="n">TaskStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="step-fields">Step Fields<a class="headerlink" href="#step-fields" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1290,12 +1277,12 @@
 </tr>
 <tr>
 <td><code>tool_input</code></td>
-<td>string</td>
+<td>dict</td>
 <td>Input to the tool</td>
 </tr>
 <tr>
 <td><code>tool_output</code></td>
-<td>string</td>
+<td>any</td>
 <td>Output from the tool</td>
 </tr>
 <tr>

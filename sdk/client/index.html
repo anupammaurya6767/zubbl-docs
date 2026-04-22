@@ -709,7 +709,7 @@
   <a href="#start_trajectorytask_description-metadatanone-str" class="md-nav__link">
     <span class="md-ellipsis">
       
-        start_trajectory(task_description, metadata=None) → str
+        start_trajectory(task_description, metadata=None) -&gt; str
       
     </span>
   </a>
@@ -731,7 +731,7 @@
   <a href="#end_trajectorystatus-actual_outputnone-expected_outputnone-agent_confidencenone-trajectory" class="md-nav__link">
     <span class="md-ellipsis">
       
-        end_trajectory(status, actual_output=None, expected_output=None, agent_confidence=None) → Trajectory
+        end_trajectory(status, actual_output=None, expected_output=None, agent_confidence=None) -&gt; Trajectory
       
     </span>
   </a>
@@ -742,7 +742,7 @@
   <a href="#querytask_description-contextnone-policy-none" class="md-nav__link">
     <span class="md-ellipsis">
       
-        query(task_description, context=None) → Policy | None
+        query(task_description, context=None) -&gt; Policy | None
       
     </span>
   </a>
@@ -753,7 +753,7 @@
   <a href="#feedbacktrajectory_id-rating-commentnone-dict" class="md-nav__link">
     <span class="md-ellipsis">
       
-        feedback(trajectory_id, rating, comment=None) → dict
+        feedback(trajectory_id, rating, comment=None) -&gt; dict
       
     </span>
   </a>
@@ -764,7 +764,7 @@
   <a href="#get_usage-usagestats" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_usage() → UsageStats
+        get_usage() -&gt; UsageStats
       
     </span>
   </a>
@@ -775,7 +775,18 @@
   <a href="#wrapagent-auto_recovernone-wrappedagent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        wrap(agent, auto_recover=None) → WrappedAgent
+        wrap(agent, auto_recover=None) -&gt; WrappedAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrap_crewcrew-agent_namesnone-wrappedcrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        wrap_crew(crew, agent_names=None) -&gt; WrappedCrew
       
     </span>
   </a>
@@ -786,7 +797,7 @@
   <a href="#get_failure_stats-dict" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_failure_stats() → dict
+        get_failure_stats() -&gt; dict
       
     </span>
   </a>
@@ -797,7 +808,7 @@
   <a href="#validatetrajectory_id-expected_output-actual_outputnone-agent_confidence00-dict" class="md-nav__link">
     <span class="md-ellipsis">
       
-        validate(trajectory_id, expected_output, actual_output=None, agent_confidence=0.0) → dict
+        validate(trajectory_id, expected_output, actual_output=None, agent_confidence=0.0) -&gt; dict
       
     </span>
   </a>
@@ -825,7 +836,7 @@
   <a href="#find_similar_trajectoriesquery_text-top_k5-status_filternone-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        find_similar_trajectories(query_text, top_k=5, status_filter=None) → list
+        find_similar_trajectories(query_text, top_k=5, status_filter=None) -&gt; list
       
     </span>
   </a>
@@ -836,7 +847,7 @@
   <a href="#get_graph_recommendationstask_type-min_confidence05-limit5-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_graph_recommendations(task_type, min_confidence=0.5, limit=5) → list
+        get_graph_recommendations(task_type, min_confidence=0.5, limit=5) -&gt; list
       
     </span>
   </a>
@@ -847,7 +858,7 @@
   <a href="#get_skill_gapsagent_id-task_type-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_skill_gaps(agent_id, task_type) → list
+        get_skill_gaps(agent_id, task_type) -&gt; list
       
     </span>
   </a>
@@ -858,7 +869,7 @@
   <a href="#get_training_stats-trainingstats-none" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_training_stats() → TrainingStats | None
+        get_training_stats() -&gt; TrainingStats | None
       
     </span>
   </a>
@@ -869,7 +880,7 @@
   <a href="#trigger_training-dict-none" class="md-nav__link">
     <span class="md-ellipsis">
       
-        trigger_training() → dict | None
+        trigger_training() -&gt; dict | None
       
     </span>
   </a>
@@ -880,7 +891,7 @@
   <a href="#get_services_health-servicehealth" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_services_health() → ServiceHealth
+        get_services_health() -&gt; ServiceHealth
       
     </span>
   </a>
@@ -891,7 +902,7 @@
   <a href="#get_streams_info-dict-none" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_streams_info() → dict | None
+        get_streams_info() -&gt; dict | None
       
     </span>
   </a>
@@ -1378,7 +1389,7 @@
   <a href="#start_trajectorytask_description-metadatanone-str" class="md-nav__link">
     <span class="md-ellipsis">
       
-        start_trajectory(task_description, metadata=None) → str
+        start_trajectory(task_description, metadata=None) -&gt; str
       
     </span>
   </a>
@@ -1400,7 +1411,7 @@
   <a href="#end_trajectorystatus-actual_outputnone-expected_outputnone-agent_confidencenone-trajectory" class="md-nav__link">
     <span class="md-ellipsis">
       
-        end_trajectory(status, actual_output=None, expected_output=None, agent_confidence=None) → Trajectory
+        end_trajectory(status, actual_output=None, expected_output=None, agent_confidence=None) -&gt; Trajectory
       
     </span>
   </a>
@@ -1411,7 +1422,7 @@
   <a href="#querytask_description-contextnone-policy-none" class="md-nav__link">
     <span class="md-ellipsis">
       
-        query(task_description, context=None) → Policy | None
+        query(task_description, context=None) -&gt; Policy | None
       
     </span>
   </a>
@@ -1422,7 +1433,7 @@
   <a href="#feedbacktrajectory_id-rating-commentnone-dict" class="md-nav__link">
     <span class="md-ellipsis">
       
-        feedback(trajectory_id, rating, comment=None) → dict
+        feedback(trajectory_id, rating, comment=None) -&gt; dict
       
     </span>
   </a>
@@ -1433,7 +1444,7 @@
   <a href="#get_usage-usagestats" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_usage() → UsageStats
+        get_usage() -&gt; UsageStats
       
     </span>
   </a>
@@ -1444,7 +1455,18 @@
   <a href="#wrapagent-auto_recovernone-wrappedagent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        wrap(agent, auto_recover=None) → WrappedAgent
+        wrap(agent, auto_recover=None) -&gt; WrappedAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrap_crewcrew-agent_namesnone-wrappedcrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        wrap_crew(crew, agent_names=None) -&gt; WrappedCrew
       
     </span>
   </a>
@@ -1455,7 +1477,7 @@
   <a href="#get_failure_stats-dict" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_failure_stats() → dict
+        get_failure_stats() -&gt; dict
       
     </span>
   </a>
@@ -1466,7 +1488,7 @@
   <a href="#validatetrajectory_id-expected_output-actual_outputnone-agent_confidence00-dict" class="md-nav__link">
     <span class="md-ellipsis">
       
-        validate(trajectory_id, expected_output, actual_output=None, agent_confidence=0.0) → dict
+        validate(trajectory_id, expected_output, actual_output=None, agent_confidence=0.0) -&gt; dict
       
     </span>
   </a>
@@ -1494,7 +1516,7 @@
   <a href="#find_similar_trajectoriesquery_text-top_k5-status_filternone-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        find_similar_trajectories(query_text, top_k=5, status_filter=None) → list
+        find_similar_trajectories(query_text, top_k=5, status_filter=None) -&gt; list
       
     </span>
   </a>
@@ -1505,7 +1527,7 @@
   <a href="#get_graph_recommendationstask_type-min_confidence05-limit5-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_graph_recommendations(task_type, min_confidence=0.5, limit=5) → list
+        get_graph_recommendations(task_type, min_confidence=0.5, limit=5) -&gt; list
       
     </span>
   </a>
@@ -1516,7 +1538,7 @@
   <a href="#get_skill_gapsagent_id-task_type-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_skill_gaps(agent_id, task_type) → list
+        get_skill_gaps(agent_id, task_type) -&gt; list
       
     </span>
   </a>
@@ -1527,7 +1549,7 @@
   <a href="#get_training_stats-trainingstats-none" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_training_stats() → TrainingStats | None
+        get_training_stats() -&gt; TrainingStats | None
       
     </span>
   </a>
@@ -1538,7 +1560,7 @@
   <a href="#trigger_training-dict-none" class="md-nav__link">
     <span class="md-ellipsis">
       
-        trigger_training() → dict | None
+        trigger_training() -&gt; dict | None
       
     </span>
   </a>
@@ -1549,7 +1571,7 @@
   <a href="#get_services_health-servicehealth" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_services_health() → ServiceHealth
+        get_services_health() -&gt; ServiceHealth
       
     </span>
   </a>
@@ -1560,7 +1582,7 @@
   <a href="#get_streams_info-dict-none" class="md-nav__link">
     <span class="md-ellipsis">
       
-        get_streams_info() → dict | None
+        get_streams_info() -&gt; dict | None
       
     </span>
   </a>
@@ -1607,18 +1629,18 @@
 <p>The main entry point for the Zubbl SDK.</p>
 <h2 id="initialize">Initialize<a class="headerlink" href="#initialize" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">zubbl</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZubblClient</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">zubbl</span> <span class="o">=</span> <span class="n">ZubblClient</span><span class="p">(</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;zubbl_YOUR_KEY&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://api.zubbl.tech&quot;</span><span class="p">,</span>  <span class="c1"># default</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>                          <span class="c1"># request timeout in seconds</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">max_retries</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>                       <span class="c1"># retry on transient failures</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">rl_mode</span><span class="o">=</span><span class="s2">&quot;cloud&quot;</span><span class="p">,</span>                     <span class="c1"># &quot;local&quot; | &quot;cloud&quot; | &quot;hybrid&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">zubbl.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">RLMode</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">zubbl</span> <span class="o">=</span> <span class="n">ZubblClient</span><span class="p">(</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;zubbl_YOUR_KEY&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://api.zubbl.in&quot;</span><span class="p">,</span>  <span class="c1"># default</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>                        <span class="c1"># request timeout in seconds</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">rl_mode</span><span class="o">=</span><span class="n">RLMode</span><span class="o">.</span><span class="n">LOCAL</span><span class="p">,</span>              <span class="c1"># LOCAL | COREWEAVE | B200</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">)</span>
 </code></pre></div>
 <hr />
 <h2 id="core-methods">Core Methods<a class="headerlink" href="#core-methods" title="Permanent link">&para;</a></h2>
-<h3 id="start_trajectorytask_description-metadatanone-str"><code>start_trajectory(task_description, metadata=None) → str</code><a class="headerlink" href="#start_trajectorytask_description-metadatanone-str" title="Permanent link">&para;</a></h3>
+<h3 id="start_trajectorytask_description-metadatanone-str"><code>start_trajectory(task_description, metadata=None) -&gt; str</code><a class="headerlink" href="#start_trajectorytask_description-metadatanone-str" title="Permanent link">&para;</a></h3>
 <p>Start recording a new trajectory. Returns the trajectory ID.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">tid</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">start_trajectory</span><span class="p">(</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">task_description</span><span class="o">=</span><span class="s2">&quot;Summarize quarterly report&quot;</span><span class="p">,</span>
@@ -1636,11 +1658,13 @@
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">latency_ms</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">)</span>
 </code></pre></div>
-<h3 id="end_trajectorystatus-actual_outputnone-expected_outputnone-agent_confidencenone-trajectory"><code>end_trajectory(status, actual_output=None, expected_output=None, agent_confidence=None) → Trajectory</code><a class="headerlink" href="#end_trajectorystatus-actual_outputnone-expected_outputnone-agent_confidencenone-trajectory" title="Permanent link">&para;</a></h3>
-<p>End and auto-ingest the current trajectory. Status must be <code>"success"</code>, <code>"failure"</code>, <code>"partial"</code>, or <code>"timeout"</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">traj</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">end_trajectory</span><span class="p">(</span><span class="n">status</span><span class="o">=</span><span class="s2">&quot;success&quot;</span><span class="p">)</span>
+<h3 id="end_trajectorystatus-actual_outputnone-expected_outputnone-agent_confidencenone-trajectory"><code>end_trajectory(status, actual_output=None, expected_output=None, agent_confidence=None) -&gt; Trajectory</code><a class="headerlink" href="#end_trajectorystatus-actual_outputnone-expected_outputnone-agent_confidencenone-trajectory" title="Permanent link">&para;</a></h3>
+<p>End and auto-ingest the current trajectory.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">zubbl.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">TaskStatus</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">traj</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">end_trajectory</span><span class="p">(</span><span class="n">status</span><span class="o">=</span><span class="n">TaskStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="querytask_description-contextnone-policy-none"><code>query(task_description, context=None) → Policy | None</code><a class="headerlink" href="#querytask_description-contextnone-policy-none" title="Permanent link">&para;</a></h3>
+<h3 id="querytask_description-contextnone-policy-none"><code>query(task_description, context=None) -&gt; Policy | None</code><a class="headerlink" href="#querytask_description-contextnone-policy-none" title="Permanent link">&para;</a></h3>
 <p>Get policy recommendations before running a task.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">policy</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">task_description</span><span class="o">=</span><span class="s2">&quot;code review&quot;</span><span class="p">)</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">if</span> <span class="n">policy</span><span class="p">:</span>
@@ -1649,7 +1673,7 @@
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">policy</span><span class="o">.</span><span class="n">recommended_actions</span><span class="p">)</span> <span class="c1"># list</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">policy</span><span class="o">.</span><span class="n">is_quarantined</span><span class="p">)</span>      <span class="c1"># bool</span>
 </code></pre></div>
-<h3 id="feedbacktrajectory_id-rating-commentnone-dict"><code>feedback(trajectory_id, rating, comment=None) → dict</code><a class="headerlink" href="#feedbacktrajectory_id-rating-commentnone-dict" title="Permanent link">&para;</a></h3>
+<h3 id="feedbacktrajectory_id-rating-commentnone-dict"><code>feedback(trajectory_id, rating, comment=None) -&gt; dict</code><a class="headerlink" href="#feedbacktrajectory_id-rating-commentnone-dict" title="Permanent link">&para;</a></h3>
 <p>Submit feedback on a trajectory. Rating is -1.0 to 1.0.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">zubbl</span><span class="o">.</span><span class="n">feedback</span><span class="p">(</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="n">trajectory_id</span><span class="o">=</span><span class="s2">&quot;traj_abc123&quot;</span><span class="p">,</span>
@@ -1657,7 +1681,7 @@
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="n">comment</span><span class="o">=</span><span class="s2">&quot;Accurate and fast&quot;</span><span class="p">,</span>
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">)</span>
 </code></pre></div>
-<h3 id="get_usage-usagestats"><code>get_usage() → UsageStats</code><a class="headerlink" href="#get_usage-usagestats" title="Permanent link">&para;</a></h3>
+<h3 id="get_usage-usagestats"><code>get_usage() -&gt; UsageStats</code><a class="headerlink" href="#get_usage-usagestats" title="Permanent link">&para;</a></h3>
 <p>Get usage statistics.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">usage</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_usage</span><span class="p">()</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">usage</span><span class="o">.</span><span class="n">trajectories_ingested</span><span class="p">)</span>  <span class="c1"># int</span>
@@ -1666,80 +1690,81 @@
 <a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">usage</span><span class="o">.</span><span class="n">queries_made</span><span class="p">)</span>           <span class="c1"># int</span>
 <a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">usage</span><span class="o">.</span><span class="n">rl_cycles_run</span><span class="p">)</span>          <span class="c1"># int</span>
 </code></pre></div>
-<h3 id="wrapagent-auto_recovernone-wrappedagent"><code>wrap(agent, auto_recover=None) → WrappedAgent</code><a class="headerlink" href="#wrapagent-auto_recovernone-wrappedagent" title="Permanent link">&para;</a></h3>
+<h3 id="wrapagent-auto_recovernone-wrappedagent"><code>wrap(agent, auto_recover=None) -&gt; WrappedAgent</code><a class="headerlink" href="#wrapagent-auto_recovernone-wrappedagent" title="Permanent link">&para;</a></h3>
 <p>Wrap any callable agent for automatic trajectory recording and recovery.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">smart_agent</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">wrap</span><span class="p">(</span><span class="n">my_agent</span><span class="p">)</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">result</span> <span class="o">=</span> <span class="n">smart_agent</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;Your task&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">result</span> <span class="o">=</span> <span class="n">smart_agent</span><span class="p">(</span><span class="s2">&quot;Your task&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="get_failure_stats-dict"><code>get_failure_stats() → dict</code><a class="headerlink" href="#get_failure_stats-dict" title="Permanent link">&para;</a></h3>
+<h3 id="wrap_crewcrew-agent_namesnone-wrappedcrew"><code>wrap_crew(crew, agent_names=None) -&gt; WrappedCrew</code><a class="headerlink" href="#wrap_crewcrew-agent_namesnone-wrappedcrew" title="Permanent link">&para;</a></h3>
+<p>Wrap a CrewAI crew for automatic trajectory recording.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">smart_crew</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">wrap_crew</span><span class="p">(</span><span class="n">crew</span><span class="p">)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">result</span> <span class="o">=</span> <span class="n">smart_crew</span><span class="o">.</span><span class="n">kickoff</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="get_failure_stats-dict"><code>get_failure_stats() -&gt; dict</code><a class="headerlink" href="#get_failure_stats-dict" title="Permanent link">&para;</a></h3>
 <p>Get failure statistics and recovery rates.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">stats</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_failure_stats</span><span class="p">()</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">stats</span><span class="p">[</span><span class="s2">&quot;total_failures_seen&quot;</span><span class="p">])</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">stats</span><span class="p">[</span><span class="s2">&quot;total_auto_recovered&quot;</span><span class="p">])</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">stats</span><span class="p">[</span><span class="s2">&quot;recovery_rate&quot;</span><span class="p">])</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">stats</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_failure_stats</span><span class="p">()</span>
 </code></pre></div>
-<h3 id="validatetrajectory_id-expected_output-actual_outputnone-agent_confidence00-dict"><code>validate(trajectory_id, expected_output, actual_output=None, agent_confidence=0.0) → dict</code><a class="headerlink" href="#validatetrajectory_id-expected_output-actual_outputnone-agent_confidence00-dict" title="Permanent link">&para;</a></h3>
+<h3 id="validatetrajectory_id-expected_output-actual_outputnone-agent_confidence00-dict"><code>validate(trajectory_id, expected_output, actual_output=None, agent_confidence=0.0) -&gt; dict</code><a class="headerlink" href="#validatetrajectory_id-expected_output-actual_outputnone-agent_confidence00-dict" title="Permanent link">&para;</a></h3>
 <p>Validate a trajectory's output against expected results.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">result</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="n">trajectory_id</span><span class="o">=</span><span class="s2">&quot;traj_abc123&quot;</span><span class="p">,</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="n">expected_output</span><span class="o">=</span><span class="s2">&quot;Summary of Q4 earnings&quot;</span><span class="p">,</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="n">actual_output</span><span class="o">=</span><span class="s2">&quot;Q4 revenue grew 15%&quot;</span><span class="p">,</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="n">agent_confidence</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">result</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="n">trajectory_id</span><span class="o">=</span><span class="s2">&quot;traj_abc123&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="n">expected_output</span><span class="o">=</span><span class="s2">&quot;Summary of Q4 earnings&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="n">actual_output</span><span class="o">=</span><span class="s2">&quot;Q4 revenue grew 15%&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="n">agent_confidence</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="p">)</span>
 </code></pre></div>
 <hr />
 <h2 id="cloud-features-pro-plans">Cloud Features (Pro Plans)<a class="headerlink" href="#cloud-features-pro-plans" title="Permanent link">&para;</a></h2>
-<h3 id="find_similar_trajectoriesquery_text-top_k5-status_filternone-list"><code>find_similar_trajectories(query_text, top_k=5, status_filter=None) → list</code><a class="headerlink" href="#find_similar_trajectoriesquery_text-top_k5-status_filternone-list" title="Permanent link">&para;</a></h3>
+<h3 id="find_similar_trajectoriesquery_text-top_k5-status_filternone-list"><code>find_similar_trajectories(query_text, top_k=5, status_filter=None) -&gt; list</code><a class="headerlink" href="#find_similar_trajectoriesquery_text-top_k5-status_filternone-list" title="Permanent link">&para;</a></h3>
 <p>Find similar past trajectories using vector search.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">results</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">find_similar_trajectories</span><span class="p">(</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="n">query_text</span><span class="o">=</span><span class="s2">&quot;fix authentication bug&quot;</span><span class="p">,</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="n">top_k</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="n">status_filter</span><span class="o">=</span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="p">)</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">trajectory_id</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">score</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">results</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">find_similar_trajectories</span><span class="p">(</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="n">query_text</span><span class="o">=</span><span class="s2">&quot;fix authentication bug&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="n">top_k</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    <span class="n">status_filter</span><span class="o">=</span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="p">)</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">trajectory_id</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">score</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="get_graph_recommendationstask_type-min_confidence05-limit5-list"><code>get_graph_recommendations(task_type, min_confidence=0.5, limit=5) → list</code><a class="headerlink" href="#get_graph_recommendationstask_type-min_confidence05-limit5-list" title="Permanent link">&para;</a></h3>
+<h3 id="get_graph_recommendationstask_type-min_confidence05-limit5-list"><code>get_graph_recommendations(task_type, min_confidence=0.5, limit=5) -&gt; list</code><a class="headerlink" href="#get_graph_recommendationstask_type-min_confidence05-limit5-list" title="Permanent link">&para;</a></h3>
 <p>Get skill graph recommendations.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">recs</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_graph_recommendations</span><span class="p">(</span><span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;code_review&quot;</span><span class="p">)</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">recs</span><span class="p">:</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">pattern</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">confidence</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">description</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">recs</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_graph_recommendations</span><span class="p">(</span><span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;code_review&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">recs</span><span class="p">:</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">pattern_name</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">confidence</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">success_rate</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="get_skill_gapsagent_id-task_type-list"><code>get_skill_gaps(agent_id, task_type) → list</code><a class="headerlink" href="#get_skill_gapsagent_id-task_type-list" title="Permanent link">&para;</a></h3>
+<h3 id="get_skill_gapsagent_id-task_type-list"><code>get_skill_gaps(agent_id, task_type) -&gt; list</code><a class="headerlink" href="#get_skill_gapsagent_id-task_type-list" title="Permanent link">&para;</a></h3>
 <p>Analyze skill gaps for an agent.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">gaps</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_skill_gaps</span><span class="p">(</span><span class="n">agent_id</span><span class="o">=</span><span class="s2">&quot;my-agent&quot;</span><span class="p">,</span> <span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;security_audit&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">gaps</span><span class="p">:</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">skill</span><span class="p">,</span> <span class="n">g</span><span class="o">.</span><span class="n">importance</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">gaps</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_skill_gaps</span><span class="p">(</span><span class="n">agent_id</span><span class="o">=</span><span class="s2">&quot;my-agent&quot;</span><span class="p">,</span> <span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;security_audit&quot;</span><span class="p">)</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">gaps</span><span class="p">:</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">skill_name</span><span class="p">,</span> <span class="n">g</span><span class="o">.</span><span class="n">domain</span><span class="p">,</span> <span class="n">g</span><span class="o">.</span><span class="n">description</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="get_training_stats-trainingstats-none"><code>get_training_stats() → TrainingStats | None</code><a class="headerlink" href="#get_training_stats-trainingstats-none" title="Permanent link">&para;</a></h3>
+<h3 id="get_training_stats-trainingstats-none"><code>get_training_stats() -&gt; TrainingStats | None</code><a class="headerlink" href="#get_training_stats-trainingstats-none" title="Permanent link">&para;</a></h3>
 <p>Get training pipeline status.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">stats</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_training_stats</span><span class="p">()</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">if</span> <span class="n">stats</span><span class="p">:</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">model_name</span><span class="p">)</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">training_runs</span><span class="p">)</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">trajectories_buffered</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">stats</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_training_stats</span><span class="p">()</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="k">if</span> <span class="n">stats</span><span class="p">:</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">is_available</span><span class="p">)</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">training_runs</span><span class="p">)</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">total_trajectories_buffered</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="trigger_training-dict-none"><code>trigger_training() → dict | None</code><a class="headerlink" href="#trigger_training-dict-none" title="Permanent link">&para;</a></h3>
+<h3 id="trigger_training-dict-none"><code>trigger_training() -&gt; dict | None</code><a class="headerlink" href="#trigger_training-dict-none" title="Permanent link">&para;</a></h3>
 <p>Manually trigger a training run.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">zubbl</span><span class="o">.</span><span class="n">trigger_training</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">zubbl</span><span class="o">.</span><span class="n">trigger_training</span><span class="p">()</span>
 </code></pre></div>
-<h3 id="get_services_health-servicehealth"><code>get_services_health() → ServiceHealth</code><a class="headerlink" href="#get_services_health-servicehealth" title="Permanent link">&para;</a></h3>
+<h3 id="get_services_health-servicehealth"><code>get_services_health() -&gt; ServiceHealth</code><a class="headerlink" href="#get_services_health-servicehealth" title="Permanent link">&para;</a></h3>
 <p>Check which cloud services are available.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">health</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_services_health</span><span class="p">()</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">health</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">health</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_services_health</span><span class="p">()</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">health</span><span class="o">.</span><span class="n">neo4j</span><span class="p">,</span> <span class="n">health</span><span class="o">.</span><span class="n">pinecone</span><span class="p">,</span> <span class="n">health</span><span class="o">.</span><span class="n">redis_streams</span><span class="p">,</span> <span class="n">health</span><span class="o">.</span><span class="n">grpo</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="get_streams_info-dict-none"><code>get_streams_info() → dict | None</code><a class="headerlink" href="#get_streams_info-dict-none" title="Permanent link">&para;</a></h3>
+<h3 id="get_streams_info-dict-none"><code>get_streams_info() -&gt; dict | None</code><a class="headerlink" href="#get_streams_info-dict-none" title="Permanent link">&para;</a></h3>
 <p>Get streaming queue status.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">info</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_streams_info</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">info</span> <span class="o">=</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_streams_info</span><span class="p">()</span>
 </code></pre></div>
 <hr />
 <h2 id="async-methods">Async Methods<a class="headerlink" href="#async-methods" title="Permanent link">&para;</a></h2>
 <p>All core methods have async variants:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># Async versions</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">await</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">ingest_async</span><span class="p">(</span><span class="n">trajectory</span><span class="p">)</span>
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="n">policy</span> <span class="o">=</span> <span class="k">await</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">query_async</span><span class="p">(</span><span class="n">task_description</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
-<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">find_similar_trajectories_async</span><span class="p">(</span><span class="n">query_text</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
-<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="n">recs</span> <span class="o">=</span> <span class="k">await</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_graph_recommendations_async</span><span class="p">(</span><span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">await</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">ingest_async</span><span class="p">(</span><span class="n">trajectory</span><span class="p">)</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">policy</span> <span class="o">=</span> <span class="k">await</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">query_async</span><span class="p">(</span><span class="n">task_description</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">find_similar_trajectories_async</span><span class="p">(</span><span class="n">query_text</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="n">recs</span> <span class="o">=</span> <span class="k">await</span> <span class="n">zubbl</span><span class="o">.</span><span class="n">get_graph_recommendations_async</span><span class="p">(</span><span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
 </code></pre></div>
 
 
